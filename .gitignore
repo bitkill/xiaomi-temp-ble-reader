@@ -1,2 +1,6 @@
 *.ini
 .idea
+
+# concrete config files
+devices.ini
+mqtt.ini

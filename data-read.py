@@ -1,15 +1,16 @@
 #!/usr/bin/python3
 
-from mitemp.mitemp_bt.mitemp_bt_poller import MiTempBtPoller
-from mitemp.mitemp_bt.mitemp_bt_poller import MI_TEMPERATURE, MI_HUMIDITY, MI_BATTERY
-from btlewrap.bluepy import BluepyBackend
-from bluepy.btle import BTLEException
-import paho.mqtt.publish as publish
-import traceback
 import configparser
-import os
-import json
 import datetime
+import json
+import os
+
+import paho.mqtt.publish as publish
+from bluepy.btle import BTLEException
+from btlewrap.bluepy import BluepyBackend
+
+from mitemp.mitemp_bt.mitemp_bt_poller import MI_TEMPERATURE, MI_HUMIDITY, MI_BATTERY
+from mitemp.mitemp_bt.mitemp_bt_poller import MiTempBtPoller
 
 workdir = os.path.dirname(os.path.realpath(__file__))
 config = configparser.ConfigParser()

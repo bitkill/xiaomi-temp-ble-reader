@@ -1,0 +1,4 @@
+
+# Concrete requirements for this package
+bluepy==1.3.0
+paho-mqtt==1.5.1
