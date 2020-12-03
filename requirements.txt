@@ -2,3 +2,8 @@
 # Concrete requirements for this package
 bluepy==1.3.0
 paho-mqtt==1.5.1
+
+# Polling reader requirements
+pycryptodomex>=3.9.7
+voluptuous~=0.12.0
+pycryptodome

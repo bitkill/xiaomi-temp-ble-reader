@@ -1,5 +1,6 @@
 *.ini
 .idea
+__pycache__
 
 # concrete config files
 devices.ini
